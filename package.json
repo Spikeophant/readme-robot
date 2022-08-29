@@ -1,0 +1,27 @@
+{
+  "name": "readme-robot",
+  "version": "0.0.1",
+  "description": "A readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spikeophant/readme-robot.git"
+  },
+  "keywords": [
+    "Readme",
+    "Generator",
+    "Robot"
+  ],
+  "author": "spikeophant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spikeophant/readme-robot/issues"
+  },
+  "homepage": "https://github.com/Spikeophant/readme-robot#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
