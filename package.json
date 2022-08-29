@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/Spikeophant/readme-robot#readme",
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "yargs": "^17.5.1"
+    "inquirer": "^8.2.4"
   }
 }
