@@ -44,20 +44,46 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Github profile link?',
+        message: 'Github username?',
         name: 'github'
+    },
+    {
+        type: 'list',
+        message: 'Please select a license.',
+        name: 'license',
+        choices: ['MIT', 'Apache-2.0', 'ISC', 'BSD-3-Clause', 'BSD-2-Clause']
     }
 ];
 
 // TODO: Create a function to write README file
 writeToFile = (data) => {
     console.log('Using path ' + data.path);
+    var badge = '';
+    switch (data.license) {
+        case 'MIT':
+            badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+            break;
+        case 'Apache-2.0':
+            badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+            break;
+        case 'ISC':
+            badge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+            break;
+        case 'BSD-3-Clause':
+            badge = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+            break;
+        case 'BSD-2-Clause':
+            badge = '[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)';
+            break;
+    }
     const readmeTemplateLiteral = `
-    # ${data.title}
+# ${data.title}
 
 ## Description
 
-${data.description}
+${data.desc}
+
+${badge}
 
 ## Table of Contents (Optional)
 
@@ -71,35 +97,29 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Installation
 
 ${data.installation}
+
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
 ${data.usage}
 
-## Credits
+## Credits and Questions
 
+Please reach out by raising an issue if you have questions or suggestions.
 ${data.email}
-${data.github}
+https://github.com/${data.github}
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
+This application is covered by ${data.license}
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
+${data.contrib}
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+${data.testing}
     `
 
     fs.writeFile(data.path, readmeTemplateLiteral, (err) => {
