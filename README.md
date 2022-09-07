@@ -3,9 +3,9 @@
 
 ## Description
 
-CLI application to generate readmes from responses to prompts.
+It is a simple node.js cli to generate high quality professional readme's.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Table of Contents (Optional)
 
@@ -26,18 +26,19 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 node index.js
 
-## Credits
+## Credits and Questions
 
+Please reach out by raising an issue if you have questions or suggestions.
 dustin.davisson@gmail.com
 https://github.com/Spikeophant
 
 ## License
 
-This application is covered by MIT
+This application is covered by BSD-3-Clause
 
 ## How to Contribute
 
-MR's gladly accepted.
+We accept MR's, after review from main contributor.
 ## Tests
 
 npm run test
