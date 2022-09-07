@@ -27,6 +27,8 @@ https://drive.google.com/file/d/1ft8q0UmVzbnZDOxsfxlXwPHIMEfobJwF/view
 
 node index.js
 
+see sample_readme.md for example output.
+
 ## Credits and Questions
 
 Please reach out by raising an issue if you have questions or suggestions.
