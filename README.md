@@ -22,7 +22,8 @@ npm install
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Video Demo
+https://drive.google.com/file/d/1ft8q0UmVzbnZDOxsfxlXwPHIMEfobJwF/view
 
 node index.js
 

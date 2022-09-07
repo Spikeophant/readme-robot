@@ -100,8 +100,6 @@ ${data.installation}
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
 ${data.usage}
 
 ## Credits and Questions
