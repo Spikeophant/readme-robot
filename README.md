@@ -3,11 +3,11 @@
 
 ## Description
 
-It is a simple node.js cli to generate high quality professional readme's.
+A readme node.js generation application, aiming to make the creation of new repos with quality readme content easier.
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Table of Contents (Optional)
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
@@ -38,7 +38,7 @@ This application is covered by BSD-3-Clause
 
 ## How to Contribute
 
-We accept MR's, after review from main contributor.
+Contributions gladly accepted, please open an MR!
 ## Tests
 
 npm run test
